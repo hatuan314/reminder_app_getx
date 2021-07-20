@@ -16,11 +16,12 @@ class GroupModelAdapter extends TypeAdapter<GroupModel> {
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return GroupModel()
-      ..name = fields[0] as String?
-      ..color = fields[1] as Color?
-      ..createAt = fields[2] as DateTime?
-      ..lastTime = fields[3] as DateTime?;
+    return GroupModel(
+      name: fields[0] as String?,
+      color: fields[1] as int?,
+      createAt: fields[2] as DateTime?,
+      lastTime: fields[3] as DateTime?,
+    );
   }
 
   @override

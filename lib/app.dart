@@ -9,7 +9,6 @@ import 'package:reminder_app_getx/theme/theme_data.dart';
 class App extends StatefulWidget {
   @override
   _AppState createState() => _AppState();
-
 }
 
 class _AppState extends State<App> {

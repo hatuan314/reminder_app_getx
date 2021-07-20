@@ -17,7 +17,7 @@ class ColorWidget extends GetWidget<AddGroupController> {
             color: state.addGroupState!.value.color,
             boxShadow: [
               BoxShadow(
-                color: state.addGroupState!.value.color!.withOpacity(0.5),
+                color: state.addGroupState!.value.color.withOpacity(0.5),
                 spreadRadius: 5,
                 blurRadius: 7,
                 offset: Offset(0, 3), // changes position of shadow

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:reminder_app_getx/common/bindings/add_group_binding.dart';
+import 'package:reminder_app_getx/modules/group/add_group/controller/add_group_binding.dart';
 import 'package:reminder_app_getx/modules/group/add_group/add_group_screen.dart';
 import 'package:reminder_app_getx/modules/home/home_screen.dart';
 import 'package:reminder_app_getx/modules/splash/splash_screen.dart';

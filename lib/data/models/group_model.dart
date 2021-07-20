@@ -7,7 +7,7 @@ class GroupModel {
   @HiveField(0)
   String? name;
   @HiveField(1)
-  Color? color;
+  int? color;
   @HiveField(2)
   DateTime? createAt;
   @HiveField(3)
