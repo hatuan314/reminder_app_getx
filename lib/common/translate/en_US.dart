@@ -3,5 +3,11 @@ const Map<String, String> enUS = {
   'add_list': 'Add List',
   'done': 'Done',
   'groups': 'Groups',
-  'group': 'Group'
+  'group': 'Group',
+  'details': 'Details',
+  'priority': 'Priority',
+  'none': 'None',
+  'low': 'Low',
+  'medium': 'Medium',
+  'high': 'High',
 };

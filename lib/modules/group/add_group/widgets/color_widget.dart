@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:reminder_app_getx/modules/group/add_group/controller/add_group_controller.dart';
 import 'package:reminder_app_getx/modules/group/add_group/add_group_values.dart';
@@ -23,6 +23,11 @@ class ColorWidget extends GetWidget<AddGroupController> {
                 offset: Offset(0, 3), // changes position of shadow
               ),
             ],
+          ),
+          child: Icon(
+            Icons.list,
+            color: AppColor.white,
+            size: AddGroupValues.iconSize,
           ),
         );
       }

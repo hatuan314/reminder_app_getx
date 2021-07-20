@@ -32,31 +32,31 @@ class TextFormWidget extends TextFormField {
                 TextFormConstants.paddingTop,
                 TextFormConstants.paddingHorizontal,
                 TextFormConstants.paddingBottom),
-            focusColor: AppColor.paleGrey,
-            hoverColor: AppColor.paleGrey,
-            fillColor: backgroundColor ?? AppColor.paleGrey,
+            focusColor: AppColor.white,
+            hoverColor: AppColor.white,
+            fillColor: backgroundColor ?? AppColor.white,
             filled: true,
             border: OutlineInputBorder(
                 borderSide: BorderSide(
-                  color: AppColor.paleGrey,
+                  color: AppColor.white,
                 ),
                 borderRadius: BorderRadius.all(
                     Radius.circular(Layouts.roundedRadius))),
             disabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                  color: AppColor.paleGrey,
+                  color: AppColor.white,
                 ),
                 borderRadius: BorderRadius.all(
                     Radius.circular(Layouts.roundedRadius))),
             enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                  color: AppColor.paleGrey,
+                  color: AppColor.white,
                 ),
                 borderRadius: BorderRadius.all(
                     Radius.circular(Layouts.roundedRadius))),
             focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                  color: AppColor.paleGrey,
+                  color: AppColor.white,
                 ),
                 borderRadius: BorderRadius.all(
                     Radius.circular(Layouts.roundedRadius))),
@@ -105,9 +105,9 @@ class TextFormWidget extends TextFormField {
                 TextFormConstants.paddingTop,
                 TextFormConstants.paddingHorizontal,
                 TextFormConstants.paddingBottom),
-            focusColor: AppColor.paleGrey,
-            hoverColor: AppColor.paleGrey,
-            fillColor: backgroundColor ?? AppColor.paleGrey,
+            focusColor: AppColor.white,
+            hoverColor: AppColor.white,
+            fillColor: backgroundColor ?? AppColor.white,
             filled: true,
             prefixIcon: Icon(
               icon,
@@ -115,19 +115,19 @@ class TextFormWidget extends TextFormField {
             ),
             border: OutlineInputBorder(
                 borderSide: BorderSide(
-                  color: AppColor.paleGrey,
+                  color: AppColor.white,
                 ),
                 borderRadius: BorderRadius.all(
                     Radius.circular(Layouts.roundedRadius))),
             disabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                  color: AppColor.paleGrey,
+                  color: AppColor.white,
                 ),
                 borderRadius: BorderRadius.all(
                     Radius.circular(Layouts.roundedRadius))),
             enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                  color: AppColor.paleGrey,
+                  color: AppColor.white,
                 ),
                 borderRadius: BorderRadius.all(
                     Radius.circular(Layouts.roundedRadius))),

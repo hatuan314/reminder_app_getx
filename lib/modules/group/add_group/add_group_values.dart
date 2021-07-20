@@ -4,6 +4,7 @@ import 'package:reminder_app_getx/theme/theme_color.dart';
 
 class AddGroupValues {
   static double colorWidgetWidth = 100.w;
+  static double iconSize = 50.w;
 
   static List<Color> colorList = [
     AppColor.purple,

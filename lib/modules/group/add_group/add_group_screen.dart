@@ -32,7 +32,7 @@ class AddGroupScreen extends GetView<AddGroupController> {
             appBar: AppBar(
               title: Text(
                 'add_list'.tr,
-                style: ThemeText.headline6,
+                style: ThemeText.body1,
               ),
               leading: IconButton(
                   icon: Icon(

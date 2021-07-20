@@ -55,7 +55,7 @@ class AddGroupController extends GetxController {
     int key = await groupRepo.setNewGroup(group);
     if (key > 0) {
       addGroupState!.value = addGroupState!.value.copyWith(viewState: ViewState.initial);
-      Get.back();
+      Get.back(result: true);
     } else {
       addGroupState!.value = addGroupState!.value.copyWith(viewState: ViewState.initial);
     }

@@ -13,6 +13,6 @@ class ColorUtils {
   }
 
   static Color convertColor(int value) {
-    return AppColor.primaryColor;
+    return Color(value);
   }
 }

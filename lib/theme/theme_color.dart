@@ -6,7 +6,7 @@ class AppColor {
   static const Color textColor = black;
   static const Color hintColor = grey;
   static const Color errorColor = red;
-  static const Color backgroundColor = white;
+  static const Color backgroundColor = paleGrey;
 
   static const Color black = Colors.black;
 

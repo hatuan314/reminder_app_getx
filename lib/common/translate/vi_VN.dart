@@ -3,5 +3,11 @@ const Map<String, String> viVN = {
   'add_list': 'Thêm nhóm',
   'done': 'Xong',
   'groups': 'Danh sách nhóm',
-  'group': 'Nhóm'
+  'group': 'Nhóm',
+  'details': 'Chi tiết',
+  'priority': 'Ưu tiên',
+  'none': 'Không',
+  'low': 'Thấp',
+  'medium': 'Trung bình',
+  'high': 'Cao',
 };
