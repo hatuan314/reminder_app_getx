@@ -10,4 +10,6 @@ const Map<String, String> viVN = {
   'low': 'Thấp',
   'medium': 'Trung bình',
   'high': 'Cao',
+  'date': 'Ngày',
+  'time': 'Thời gian',
 };

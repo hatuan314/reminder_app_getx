@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:reminder_app_getx/common/values/layouts.dart';
 import 'package:reminder_app_getx/common/values/strings.dart';
 import 'package:reminder_app_getx/modules/reminder/reminder_detail/controller/reminder_detail_controller.dart';
+import 'package:reminder_app_getx/modules/reminder/reminder_detail/widgets/timestamp_widget.dart';
 import 'package:reminder_app_getx/modules/reminder/widgets/option_widget.dart';
 import 'package:reminder_app_getx/route/routes.dart';
 import 'package:reminder_app_getx/theme/theme_color.dart';
@@ -50,27 +51,35 @@ class ReminderDetailScreen extends GetView<ReminderDetailController> {
               horizontal: Layouts.paddingHorizontalApp,
               vertical: Layouts.paddingVertical8,
             ),
-            child: OptionWidget(
-              onPressed: () {
-                Get.toNamed(Routes.priority)!.then((value) {
-                  if (value is String) {
-                    controller.changePriorityEvent(value);
-                  }
-                });
-              },
-              title: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    Strings.priorityTxt,
-                    style: ThemeText.subtitle2,
+            child: Column(
+              children: [
+                TimestampWidget(),
+                SizedBox(
+                  height: Layouts.paddingVertical8,
+                ),
+                OptionWidget(
+                  onPressed: () {
+                    Get.toNamed(Routes.priority)!.then((value) {
+                      if (value is String) {
+                        controller.changePriorityEvent(value);
+                      }
+                    });
+                  },
+                  title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        Strings.priorityTxt,
+                        style: ThemeText.subtitle2,
+                      ),
+                      Text(
+                        '${state.detailRx!.value.currentPriority}',
+                        style: ThemeText.subtitle2,
+                      ),
+                    ],
                   ),
-                  Text(
-                    '${state.detailRx!.value.currentPriority}',
-                    style: ThemeText.subtitle2,
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ));

@@ -10,4 +10,6 @@ const Map<String, String> enUS = {
   'low': 'Low',
   'medium': 'Medium',
   'high': 'High',
+  'date': 'Date',
+  'time': 'Time',
 };
