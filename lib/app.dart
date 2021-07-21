@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:reminder_app_getx/common/translate/translation_service.dart';
+import 'package:reminder_app_getx/modules/common/controllers/common_binding.dart';
 import 'package:reminder_app_getx/route/app_pages.dart';
 import 'package:reminder_app_getx/route/routes.dart';
 import 'package:reminder_app_getx/theme/theme_data.dart';
@@ -28,6 +29,7 @@ class _AppState extends State<App> {
         child: GetMaterialApp(
           title: 'Reminders',
           theme: appTheme(context),
+          initialBinding: CommonBinding(),
           initialRoute: Routes.splash,
           getPages: AppPages.pages,
           locale: TranslationService.locale,

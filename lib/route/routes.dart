@@ -1,6 +1,7 @@
 class Routes {
   static const String splash = '/splash';
   static const String home = '/home';
+  static const String dev = '/dev-mode';
 
   /// Reminder
   static const String createReminder = '/create-reminder';

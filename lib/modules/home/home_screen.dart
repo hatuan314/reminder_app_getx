@@ -31,6 +31,18 @@ class HomeScreen extends GetView<HomeController> {
                   children: [TextSpan(text: 'minders', style: ThemeText.body1.copyWith(fontFamily: 'MR'))],
                 ),
               ),
+              actions: [
+                TouchableWidget(
+                    onPressed: () {
+                      Get.toNamed(Routes.dev);
+                    },
+                    child: Container(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: Layouts.paddingHorizontalApp
+                        ),
+                        alignment: Alignment.center,
+                        child: Text('Dev', style: ThemeText.body2,)))
+              ],
             ),
             body: Padding(
               padding: EdgeInsets.symmetric(
