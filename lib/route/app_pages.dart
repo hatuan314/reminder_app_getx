@@ -19,7 +19,14 @@ import 'package:reminder_app_getx/route/routes.dart';
 class AppPages {
   static final pages = [
     GetPage(name: Routes.splash, page: () => SplashScreen()),
-    GetPage(name: Routes.home, page: () => HomeScreen(), binding: HomeBinding()),
+    GetPage(
+      name: Routes.home,
+      page: () => HomeScreen(),
+      bindings: [
+        HomeBinding(),
+        CommonBinding(),
+      ],
+    ),
     GetPage(name: Routes.dev, page: () => DevModeScreen(),
         // binding: DevModeBinding(),
         bindings: [
@@ -28,12 +35,27 @@ class AppPages {
         ]),
 
     /// Group
-    GetPage(name: Routes.addGroup, page: () => AddGroupScreen(), binding: AddGroupBinding()),
-    GetPage(name: Routes.groupList, page: () => GroupListScreen(), binding: GroupListBinding()),
+    GetPage(name: Routes.addGroup, page: () => AddGroupScreen(), bindings: [
+      AddGroupBinding(),
+      CommonBinding(),
+    ]),
+    GetPage(name: Routes.groupList, page: () => GroupListScreen(), bindings: [
+      GroupListBinding(),
+      CommonBinding(),
+    ]),
 
     /// Reminder
-    GetPage(name: Routes.createReminder, page: () => AddReminderScreen(), binding: AddReminderBinding()),
-    GetPage(name: Routes.reminderDetail, page: () => ReminderDetailScreen(), binding: ReminderDetailBinding()),
-    GetPage(name: Routes.priority, page: () => PriorityListScreen(), binding: GroupListBinding()),
+    GetPage(name: Routes.createReminder, page: () => AddReminderScreen(), bindings: [
+      AddReminderBinding(),
+      CommonBinding(),
+    ]),
+    GetPage(name: Routes.reminderDetail, page: () => ReminderDetailScreen(), bindings: [
+      ReminderDetailBinding(),
+      CommonBinding(),
+    ]),
+    GetPage(name: Routes.priority, page: () => PriorityListScreen(), bindings: [
+      GroupListBinding(),
+      CommonBinding(),
+    ]),
   ];
 }

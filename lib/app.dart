@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:reminder_app_getx/common/translate/translation_service.dart';
+import 'package:reminder_app_getx/modules/common/root_screen.dart';
 import 'package:reminder_app_getx/modules/common/controllers/common_binding.dart';
 import 'package:reminder_app_getx/route/app_pages.dart';
 import 'package:reminder_app_getx/route/routes.dart';
@@ -35,6 +36,9 @@ class _AppState extends State<App> {
           locale: TranslationService.locale,
           fallbackLocale: TranslationService.fallbackLocale,
           translations: TranslationService(),
+          builder: (context, child) {
+            return RootScreen(child: child!);
+          },
         ),
       ),
     );
